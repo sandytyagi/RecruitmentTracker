@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RecruitmentTrackerModelStoreContainer" CdmEntityContainer="RecruitmentTrackerEntities">
+    <EntitySetMapping Name="UserTypes">
+      <EntityTypeMapping TypeName="RecruitmentTrackerModel.UserType">
+        <MappingFragment StoreEntitySet="UserType">
+          <ScalarProperty Name="User_Type_Id" ColumnName="User_Type_Id" />
+          <ScalarProperty Name="User_Type" ColumnName="User_Type" />
+          <ScalarProperty Name="User_Type_Name" ColumnName="User_Type_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="RecruitmentTrackerModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="User_Type" ColumnName="User_Type" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="User_name" ColumnName="User_name" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
