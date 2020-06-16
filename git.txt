@@ -1,0 +1,5 @@
+$ git checkout --orphan dev2
+Switched to a new branch 'dev2'
+$ git reset # unstage all the files, you probably don't want to commit all of them
+$ git commit --allow-empty -m 'Initial empty commit'
+[dev2 (root-commit) a515c28] Initial empty commit
